@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { UsersSkill } from './usersSkill';
-import { UserRole } from './userRole';
+import { UsersSkill } from '../enums/usersSkill';
+import { UserRole } from '../enums/userRole';
 import { LanguageCode } from '../../languages';
 
 export type UserDocument = User & Document;
@@ -8,13 +8,10 @@ export type UserDocument = User & Document;
 @Schema()
 export class User {
   @Prop()
+  username: string;
+
+  @Prop()
   password: string;
-
-  @Prop()
-  name: string;
-
-  @Prop()
-  surname: string;
 
   @Prop()
   emailAddress: string;
