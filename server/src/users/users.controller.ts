@@ -1,5 +1,6 @@
-import { Controller, Get, Injectable } from '@nestjs/common';
+import { Body, Controller, Get, Injectable, Post } from '@nestjs/common';
 import { user, UsersService } from './users.service';
+import { RegisterUserDto } from './dto/register-user.dto';
 
 @Controller('/Users')
 export class UsersController {
@@ -9,8 +10,9 @@ export class UsersController {
     return await this.usersService.findOne(username);
   }
 
-  async registerUser() {
-    return await this.usersService.registerUser();
+  @Post()
+  registerUser(@Body() dto: RegisterUserDto) {
+    return this.usersService.registerUser(dto);
   }
 
   async unregisterUser() {
