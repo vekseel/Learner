@@ -2,9 +2,6 @@
 ## I want to create the best free coding tutorial 
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-
 ## Features
 To be added later
 
