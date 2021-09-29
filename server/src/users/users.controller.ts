@@ -3,16 +3,16 @@ import { user, UsersService } from './users.service';
 import { RegisterUserDto } from './dto/register-user.dto';
 import { FindUserDto } from './dto/find-user.dto';
 
-@Controller('/Users')
+@Controller('users')
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
-  @Post('/getOne')
+  @Get('getOne')
   findOne(@Body() dto: FindUserDto): Promise<user | undefined> {
     return this.usersService.findOne(dto);
   }
 
-  @Post('/register')
+  @Post('register')
   registerUser(@Body() dto: RegisterUserDto) {
     return this.usersService.registerUser(dto);
   }
@@ -21,7 +21,7 @@ export class UsersController {
     return await this.usersService.deleteUser();
   }
 
-  @Get('/getAll')
+  @Get('getAll')
   getAllUser() {
     return this.usersService.getAllUser();
   }
