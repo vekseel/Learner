@@ -14,9 +14,7 @@ export class UsersService {
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
 
   async findOne(dto: FindUserDto): Promise<user | undefined> {
-    const user = this.userModel.findOne(
-      (user) => user.username === dto.username,
-    );
+    const user = await this.userModel.findOne({ username: dto.username });
     return user;
   }
 
