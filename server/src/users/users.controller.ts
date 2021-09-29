@@ -1,26 +1,28 @@
 import { Body, Controller, Get, Injectable, Post } from '@nestjs/common';
 import { user, UsersService } from './users.service';
 import { RegisterUserDto } from './dto/register-user.dto';
+import { FindUserDto } from './dto/find-user.dto';
 
 @Controller('/Users')
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
-  async findOne(username: string): Promise<user | undefined> {
-    return await this.usersService.findOne(username);
+  @Post('/getOne')
+  findOne(@Body() dto: FindUserDto): Promise<user | undefined> {
+    return this.usersService.findOne(dto);
   }
 
-  @Post()
+  @Post('/register')
   registerUser(@Body() dto: RegisterUserDto) {
     return this.usersService.registerUser(dto);
   }
 
-  async unregisterUser() {
-    return await this.usersService.unregisterUser();
+  async deleteUser() {
+    return await this.usersService.deleteUser();
   }
 
-  @Get()
-  async getAllUser() {
-    return await this.usersService.getAllUser();
+  @Get('/getAll')
+  getAllUser() {
+    return this.usersService.getAllUser();
   }
 }
