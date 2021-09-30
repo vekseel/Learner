@@ -9,7 +9,7 @@ export class UsersController {
 
   @Get('getOne')
   findOne(@Body() dto: FindUserDto): Promise<user | undefined> {
-    return this.usersService.findOne(dto);
+    return this.usersService.findOneUser(dto);
   }
 
   @Post('register')
