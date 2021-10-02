@@ -7,7 +7,7 @@ import { UserRole } from './enums/userRole';
 import { FindUserDto } from './dto/find-user.dto';
 import bcrypt = require('bcrypt');
 import jwt = require('jsonwebtoken');
-
+import * as dotenv from 'dotenv';
 export type user = User;
 
 @Injectable()
@@ -19,7 +19,7 @@ export class UsersService {
     return user;
   }
 
-  async registerUser(dto: RegisterUserDto): Promise<User> {
+  async registerUser(dto: RegisterUserDto): Promise<string> {
     const hashPassword = await bcrypt.hash(dto.password, 5);
 
     const user = await this.userModel.create({
@@ -31,9 +31,13 @@ export class UsersService {
       role: UserRole.Default,
     });
 
-    //const jsonwebtoken = jwt.sign({ id: user.id, email: user.emailAddress });
+    const jwtoken = jwt.sign(
+      { id: user.id, email: user.emailAddress },
+      process.env.SECRET_KEY,
+      { expiresIn: '24h' },
+    );
 
-    return user;
+    return jwtoken;
   }
 
   async deleteUser() {
