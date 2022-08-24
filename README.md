@@ -1,5 +1,7 @@
 <picture>
-  <source media="(max-width: 799px)" srcset="https://raw.githubusercontent.com/razrabs-media/articles-test/main/10%20%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D1%81%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BC%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BE%D0%BA%20(%D0%94%D0%BE%2050)/01.jpg">
-  <source media="(min-width: 800px)" srcset="https://raw.githubusercontent.com/razrabs-media/articles-test/main/10%20%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D1%81%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BC%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BE%D0%BA%20(%D0%94%D0%BE%2050)/02.jpg">
-  <img src="https://raw.githubusercontent.com/razrabs-media/articles-test/main/10%20%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D1%81%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BC%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BE%D0%BA%20(%D0%94%D0%BE%2050)/03.jpg" alt="Chris standing up holding his daughter Elva">
-</picture>
+            <source media="(max-width: 376px)" srcset="https://bennettnotes.com/post/obsessed-with-success-and-prestige/cscareerquestions_hu1e8f3c21c9fe58606fcf5407036ba6cd_34339_500x0_resize_q75_h2_box_3.webp">
+            <source media="(max-width: 992px)" srcset="https://bennettnotes.com/post/obsessed-with-success-and-prestige/cscareerquestions_hu1e8f3c21c9fe58606fcf5407036ba6cd_34339_800x0_resize_q75_h2_box_3.webp">
+            <source media="(max-width: 1400px)" srcset="https://bennettnotes.com/post/obsessed-with-success-and-prestige/cscareerquestions_hu1e8f3c21c9fe58606fcf5407036ba6cd_34339_1200x0_resize_q75_h2_box_3.webp">
+            <source media="(min-width: 1600px)" srcset="https://bennettnotes.com/post/obsessed-with-success-and-prestige/cscareerquestions_hu1e8f3c21c9fe58606fcf5407036ba6cd_34339_1500x0_resize_q75_h2_box_3.webp">
+        <img alt="" src="cscareerquestions.png" height="391" width="1321" class="img-fluid">
+    </picture>
