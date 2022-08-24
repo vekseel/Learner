@@ -1,8 +1,5 @@
-![img](https://raw.githubusercontent.com/razrabs-media/articles-test/main/1%20(7)/jjqoxswcr5qbvgi5bvbqds8r2dy.jpeg)
-
-<style>
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
+<picture>
+  <source media="(max-width: 799px)" srcset="https://raw.githubusercontent.com/razrabs-media/articles-test/podlodka-upd/podlodka/preview.jpg">
+  <source media="(min-width: 800px)" srcset="https://raw.githubusercontent.com/razrabs-media/articles-test/masd/yandx-news-1-1/preview.jpg">
+  <img src="https://raw.githubusercontent.com/razrabs-media/articles-test/yand-ne/yandx-news-1/preview.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
