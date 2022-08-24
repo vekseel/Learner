@@ -1,1 +1,8 @@
-![Kitten](https://raw.githubusercontent.com/razrabs-media/articles-test/main/1%20(7)/jjqoxswcr5qbvgi5bvbqds8r2dy.jpeg){ width=50% }
+![img](https://raw.githubusercontent.com/razrabs-media/articles-test/main/1%20(7)/jjqoxswcr5qbvgi5bvbqds8r2dy.jpeg)
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
